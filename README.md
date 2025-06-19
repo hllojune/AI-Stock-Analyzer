@@ -40,8 +40,12 @@ AI-VLM을 활용하여 주식 차트 이미지를 분석하고, 가상 투자 �
     # 가상 환경 활성화 (macOS/Linux)
     source venv/bin/activate
 
-    # 가상 환경 활성화 (Windows)
+    # 가상 환경 활성화 (Windows PowerShell 또는 CMD	)
     .\venv\Scripts\activate
+
+    # 가상 환경 활성화 (Windows Git Bash)
+    source venv/Scripts/activate
+
     ```
 
     > **Tip:** 가상 환경이 성공적으로 활성화되면 터미널 프롬프트 앞에 `(venv)`가 표시됩니다.
@@ -49,9 +53,6 @@ AI-VLM을 활용하여 주식 차트 이미지를 분석하고, 가상 투자 �
 4.  **의존성 라이브러리 설치 (Install Dependencies)**
 
     프로젝트에 필요한 모든 라이브러리를 `requirements.txt` 파일을 통해 한번에 설치합니다.
-
-    > **(프로젝트 리더 필독)**: 만약 `requirements.txt` 파일이 없다면, 아래 명령어를 실행하여 먼저 생성해주세요.
-    > `pip freeze > requirements.txt`
 
     ```bash
     # 모든 팀원은 이 명령어만 실행하면 됩니다.
