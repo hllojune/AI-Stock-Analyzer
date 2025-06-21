@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
-# AI 및 시뮬레이션 모듈 임포트 (팀원의 최신 파일 기준)
+# AI 및 시뮬레이션 모듈 임포트
 from analysis_VLM_LLM import analyze_image, ask_question_with_analysis
 from simulation import get_user_portfolio, buy_stock, sell_stock
 
@@ -45,7 +45,7 @@ def analyze_chart():
     except Exception as e:
         return jsonify({"status": "error", "message": f"분석 중 오류 발생: {str(e)}"}), 500
 
-# API 2: AI 분석에 대한 후속 질문 (신규 기능)
+# API 2: AI 분석에 대한 후속 질문
 @app.route('/api/ask', methods=['POST']) # type: ignore
 def ask_follow_up_question():
     data = request.json
